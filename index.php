@@ -11,9 +11,20 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <center>
-  <img src="logo.png" alt="linkeduplogo" width="230" height="60" style="margin-top: 2%">
-  </center>
+  
+    
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand mx-auto" href="index.php">
+            <img src="logo.png" alt="linkeduplogo" width="230" height="60" style="margin-top: 2%">
+    </a>
+    <a class="navbar-brand" style="float: right; color:white;" href="about.php">About Us</a>
+  </nav>
+    
+      
+   
+      
+    
+  
 
 </head>
 
