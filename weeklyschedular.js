@@ -1,7 +1,7 @@
 mobiscroll.setOptions({
     locale: mobiscroll.localeEn,       // Specify language like: locale: mobiscroll.localePl or omit setting to use default
     theme: 'ios',                      // Specify theme like: theme: 'ios' or omit setting to use default
-    themeVariant: 'light'              // More info about themeVariant: https://docs.mobiscroll.com/5-0-3/javascript/eventcalendar#opt-themeVariant
+    themeVariant: 'dark'              // More info about themeVariant: https://docs.mobiscroll.com/5-0-3/javascript/eventcalendar#opt-themeVariant
 });
 
 var calendar,
@@ -37,6 +37,12 @@ var calendar,
         start: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 10, 30),
         end: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 11, 30),
         title: 'Stakeholder mtg.',
+        color: '#d00f0f'
+    }, {
+        id: 5,
+        start: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7, 8, 30),
+        end: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7, 12, 30),
+        title: 'New One',
         color: '#d00f0f'
     }];
 
