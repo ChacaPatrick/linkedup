@@ -21,12 +21,12 @@ btnSignup.addEventListener('click', e =>{
           lname: lnameInput.value,
           event_count: 1
         });
-        
+        document.cookie = "uid="+ userCredential.user.uid;
+        document.cookie = "fname=" + fnameInput.value;
+        document.cookie = "lname=" + lnameInput.value;
         firestore.collection("user_events").doc(userCredential.user.uid).collection("events").doc("0").set({
           random: 100
         })
-        //firestore.collection("user_events").doc(userCredential.user.uid).collection("event").doc("0").delete();
-
         setTimeout(function(){
           window.location.href = "home.php";
         }, 400)

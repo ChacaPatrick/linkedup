@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Linkedup</title>
+  <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -26,6 +26,8 @@ include 'nav.php';
     
 </head>
 
+
+
 <body>
   <div class="split left">
   <p class="h1 text-center" style="color:white;"><strong> Link with Friends </strong></p>
@@ -42,10 +44,16 @@ include 'nav.php';
     </div>
 </div>
 
+ 
+
+
 
 <div class="split right" id="right">
 <p class="h1"><strong>Friends </strong></p>
   <div class="centered">
+  <ul class="list-group" style="list-style-type:none;" id="right" > 
+  
+  </ul>
   </div>
 </div>
  
