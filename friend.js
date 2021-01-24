@@ -98,7 +98,9 @@ firebase.auth().onAuthStateChanged((user) => {
         }).catch(function(error) {
             console.log("Error getting document:", error);
         });
-    
+        setTimeout(function(){
+            window.location.reload();
+          }, 200)
         
     }   
 function button_view(clicked) { 
