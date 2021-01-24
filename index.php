@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <p>   TESTING THIS OUT PLS    </p>
+    <p>      </p>
   <script src="scripts.js"></script>
 </body>
 </html>
