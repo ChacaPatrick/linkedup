@@ -67,7 +67,7 @@
             <img class="card-img-top" src="arnab.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title text-center">Arnab Sarkar</h5>
-                <p class="card-text text-center">CUNY Barauch College</p>
+                <p class="card-text text-center">CUNY Baruch College</p>
                 <div class="row mx-auto">
                     <div class="col-md-6">
                         <a class="text-center" href="https://github.com/a-sarkar1">
