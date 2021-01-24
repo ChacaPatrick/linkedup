@@ -44,22 +44,15 @@
                 querySnapshot.forEach(function(doc) {
                     // doc.data() is never undefined for query doc snapshots
                     //console.log(doc.id, " => ", doc.data());
-                    if(j<i && doc.id !=0){
+                    if(doc.id !=0){
                         calendar.addEvent({
-                            id: j,
+                            id: doc.id,
                             start: new Date(doc.data()["s_year"], doc.data()["s_month"], doc.data()["s_day"], doc.data()["s_hours"], doc.data()["s_minutes"]),
                             end: new Date(doc.data()["e_year"], doc.data()["e_month"], doc.data()["e_day"], doc.data()["e_hours"], doc.data()["e_minutes"]),
                             title: doc.data()["title"],
                             color: doc.data()["color"]
                         });
-                        j++;
-                        temp.push({
-                            id: j,
-                            start: new Date(doc.data()["s_year"], doc.data()["s_month"], doc.data()["s_day"], doc.data()["s_hours"], doc.data()["s_minutes"]),
-                            end: new Date(doc.data()["e_year"], doc.data()["e_month"], doc.data()["e_day"], doc.data()["e_hours"], doc.data()["e_minutes"]),
-                            title: doc.data()["title"],
-                            color: doc.data()["color"]
-                        });
+
                     }
                     
                 });
