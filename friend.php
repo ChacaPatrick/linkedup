@@ -37,7 +37,7 @@ include 'nav.php';
     <div class="col-4 centered">
       <ul class="list-group" style="list-style-type:none;" id="left"></ul>
     </div>
-    <
+    
       
     </div>
 </div>
