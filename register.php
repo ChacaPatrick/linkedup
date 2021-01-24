@@ -14,6 +14,9 @@
 </head>
 
 <body>
+<center>
+  <img src="logo.png" alt="linkeduplogo" width="230" height="60">
+  </center>
 <body style="background-color:#292b2c">
   <!-- Register Form -->
 <div class="container vertical-center">
