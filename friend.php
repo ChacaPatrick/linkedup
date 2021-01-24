@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Linkedup</title>
+  <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -18,7 +18,7 @@ include 'nav.php';
 </head>
 
 <body>
-  
+  <h1>Friend Page</h1>
   <script src="scripts.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
