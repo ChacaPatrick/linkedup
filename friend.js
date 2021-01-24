@@ -22,7 +22,7 @@ firebase.auth().onAuthStateChanged((user) => {
                         } else {
                             // doc.data() will be undefined in this case
                             console.log("No such document!");
-                                $( "#left" ).append( "<li> <button type='button' onClick='button_click(this.id)' id='"+doc.id +","+user_main + "' class='btn btn-outline-dark btn-sm'>Add</button>  "+ doc.data()["fname"] + " " +doc.data()["lname"] + "</li> <br>" );
+                                $( "#left" ).append( "<li>" + doc.data()["fname"] + " " +doc.data()["lname"] + " " + "<button type='button' onClick='button_click(this.id)' id='"+doc.id +","+user_main + "' class='btn btn-success btn-sm'>Add</button> </li> <br>" );
                             
                                 firestore.collection('user_friends').doc(user_main).collection("not friends").doc(doc.id).set({
                                 fname: doc.data()['fname'],
@@ -48,7 +48,7 @@ firebase.auth().onAuthStateChanged((user) => {
                             firestore.collection('user_friends').doc(user_main).collection("friends").doc(doc.id).get().then(function(doc2) {
                             if (doc2.exists) {
                                 console.log("Document data:", doc2.data()["lname"]);
-                                $( "#right" ).append( "<li> <button type='button' onClick='button_click(this.id)' id='"+doc2.id + "' class='btn btn-outline-dark btn-sm'>Delete</button>  "+ doc2.data()["fname"] + " " +doc2.data()["lname"] + "</li> <br>" );
+                                $( "#right" ).append( "<li> "+ doc2.data()["fname"] + " " +doc2.data()["lname"] + "</li> <br>" );
                             
     
                             } else {

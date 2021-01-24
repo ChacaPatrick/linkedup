@@ -39,8 +39,6 @@ include 'nav.php';
     <div class="col-4 centered">
       <ul class="list-group" style="list-style-type:none;" id="left"></ul>
     </div>
-    
-      
     </div>
 </div>
 
@@ -50,8 +48,10 @@ include 'nav.php';
 
 <div class="split right" id="right">
 <p class="h1"><strong>Friends </strong></p>
-  <div class="centered">
-  <ul class="list-group" style="list-style-type:none;" id="right" > </ul>
+  <div class ="container cenetered">
+    <div class="centered">
+      <ul class="list-group" id="right" style="list-style-type:none;"> </ul>
+    </div>
   </div>
 </div>
  
