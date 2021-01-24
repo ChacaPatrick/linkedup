@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+<body style="background-color:#292b2c">
   <!-- Register Form -->
 <div class="container vertical-center">
     <div class="card text-center">
