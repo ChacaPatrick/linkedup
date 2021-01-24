@@ -19,9 +19,10 @@
   </center>
 <body style="background-color:#343a40">
   <!-- Register Form -->
+
 <div class="container" style="margin-top: 3%;">
     <div class="card text-center">
-        <div class="card-header" style="background-color: #ff781f;">
+        <div class="card-header" style="background-image: linear-gradient(to right, #ffae42, #ff781f);">
             <h1>Register</h1>
         </div>
     <div class="card-body">

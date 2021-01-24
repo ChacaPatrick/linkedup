@@ -18,11 +18,11 @@
 </head>
 
 <body>
-  <body style="background-color:#343a40">
+  <body style="background-color:#343a40;">
   <!-- Login Form -->
   <div class="container " style="margin-top: 4%;">
   <div class="card w-50 mx-auto" >
-    <h1 class="card-header text-center" style="background-color: #ff781f;">Login</h1>
+    <h1 class="card-header text-center" style="background-image: linear-gradient(to right, #ffae42, #ff781f);">Login</h1>
     <div class="card-body align-items-center form-group col-xs-3" >
     <div class="container">
     <form>
