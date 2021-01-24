@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <body style="background-color:#292b2c">
+  <body style="background-color:#343a40">
   <!-- Login Form -->
   <div class="card w-50 mx-auto h-100" >
     <h1 class="card-header text-center" style="background-color: #ff781f;">Login</h1>

@@ -17,7 +17,7 @@
 <center>
   <img src="logo.png" alt="linkeduplogo" width="230" height="60">
   </center>
-<body style="background-color:#292b2c">
+<body style="background-color:#343a40">
   <!-- Register Form -->
 <div class="container vertical-center">
     <div class="card text-center">
