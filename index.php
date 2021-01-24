@@ -20,7 +20,7 @@
 <body>
   <body style="background-color:#343a40">
   <!-- Login Form -->
-  <div class="container " style="margin-top: 250px;">
+  <div class="container " style="margin-top: 5%;">
   <div class="card w-50 mx-auto" >
     <h1 class="card-header text-center" style="background-color: #ff781f;">Login</h1>
     <div class="card-body align-items-center form-group col-xs-3" >
