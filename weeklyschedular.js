@@ -117,7 +117,7 @@
                                     e_hours: tempEvent["end"].getHours(),
                                     e_minutes: tempEvent["end"].getMinutes(),
                                     title: tempEvent["title"],
-                                    color: '#d00f0f'
+                                    color: '#4c8bf5'
                                     })
                                 i++;
                                 firestore.collection('user_info').doc(uid).update({

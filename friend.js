@@ -13,7 +13,7 @@ firebase.auth().onAuthStateChanged((user) => {
                 // doc.data() is never undefined for query doc snapshots
                 console.log(doc.id, " => ", doc.data());
                 if (doc.id != uid ){
-                    $( ".list-group" ).append( "<li> <button type='button' onClick='button_click(this.id)' id='"+doc.id + "' class='btn btn-outline-dark btn-sm'>Add</button>  "+ doc.data()["fname"] + " " +doc.data()["lname"] + "</li> <br>" );
+                    $( ".list-group" ).append( "<li>" + doc.data()["fname"] + " " +doc.data()["lname"] + " " + "<button type='button' onClick='button_click(this.id)' id='"+doc.id + "' class='btn btn-success btn-sm'>Add</button> </li> <br>" );
                 }
             });
         });

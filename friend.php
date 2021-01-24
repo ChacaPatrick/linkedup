@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Linkedup</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -28,12 +28,18 @@ include 'nav.php';
 
 <body>
   <div class="split left">
-  <input id="myInput" class="search" type="text" placeholder="Search..">
-  <div class="centered" >
-  <ul class="list-group" style="list-style-type:none;" id="left" > 
-  
-</ul>
+  <p class="h1 text-center" style="color:white;"><strong> Link with Friends </strong></p>
+  <div class="container">
+    <input id="myInput" class="form-control" type="search" placeholder="Search for your friends...">
   </div>
+    <div class="container centered" >
+    
+    <div class="col-4 centered">
+      <ul class="list-group" style="list-style-type:none;" id="left"></ul>
+    </div>
+    <
+      
+    </div>
 </div>
 
 
