@@ -51,9 +51,7 @@ include 'nav.php';
 <div class="split right" id="right">
 <p class="h1"><strong>Friends </strong></p>
   <div class="centered">
-  <ul class="list-group" style="list-style-type:none;" id="right" > 
-  
-  </ul>
+  <ul class="list-group" style="list-style-type:none;" id="right" > </ul>
   </div>
 </div>
  
