@@ -1,4 +1,5 @@
-runtime: php73 # Replace with php74 to use PHP 7.4
+runtime: php	
+env: flex	
 
 runtime_config:
   document_root: .
