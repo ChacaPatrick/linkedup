@@ -9,18 +9,21 @@ firebase.auth().onAuthStateChanged((user) => {
         });*/
         // ...
         firestore.collection('user_info').get().then(function(querySnapshot) {
-            var para = document.createElement("li")
             querySnapshot.forEach(function(doc) {
                 // doc.data() is never undefined for query doc snapshots
                 console.log(doc.id, " => ", doc.data());
-                var node = document.createTextNode(doc.data()["fname"] + " " +doc.data()["lname"] )
-                para.appendChild(node);
-                para.appendChild(document.createElement("br"));
-                var element = document.getElementById("left");
-                element.appendChild(para);
+                if (doc.id != uid ){
+                    $( ".list-group" ).append( "<li> <button type='button' onClick='button_click(this.id)' id='"+doc.id + "' class='btn btn-outline-dark btn-sm'>Add</button>  "+ doc.data()["fname"] + " " +doc.data()["lname"] + "</li> <br>" );
+                }
             });
         });
 
+        function button_click(clicked) { 
+            console.log(clicked)
+            firestore.collection('user_friends').doc(uid).doc(clicked).set({
+                
+            });
+        }         
 
         } else {
             // User is signed out
