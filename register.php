@@ -15,11 +15,12 @@
 
 <body>
 <center>
-  <img src="logo.png" alt="linkeduplogo" width="230" height="60">
+  <img src="logo.png" alt="linkeduplogo" width="230" height="60" style="margin-top: 2%">
   </center>
 <body style="background-color:#343a40">
   <!-- Register Form -->
-<div class="container" style="margin-top: 150px; max-width:750px;">
+
+<div class="container" style="margin-top: 3%;">
     <div class="card text-center">
         <div class="card-header" style="background-image: linear-gradient(to right, #ffae42, #ff781f);">
             <h1>Register</h1>
