@@ -15,12 +15,9 @@ firebase.auth().onAuthStateChanged((user) => {
                 console.log(doc.id, " => ", doc.data());
                 var node = document.createTextNode(doc.data()["fname"] + " " +doc.data()["lname"] )
                 para.appendChild(node);
+                para.appendChild(document.createElement("br"));
                 var element = document.getElementById("left");
                 element.appendChild(para);
-                var br = document.createElement("br");
-                element.appendChild(br);
-                console.log(element)
-
             });
         });
 
