@@ -20,12 +20,16 @@ include 'nav.php';
 <body>
 <form>
     <div class="form-group">
-        <label for="formGroupExampleInput">Example label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+        <label for="formGroupExampleInput">Enter Activity</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="The activities you are occupied during time slot">
     </div>
     <div class="form-group">
-        <label for="formGroupExampleInput2">Another label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+        <label for="formGroupExampleInput2">Enter Start Time</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Examples is HH:MM AM(or PM)">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Enter End Time</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Examples is HH:MM AM(or PM)">
     </div>
     </form>
   <script src="scripts.js"></script>
