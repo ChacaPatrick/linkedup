@@ -33,25 +33,26 @@
         <form>
             <div class="mb-3">
                 <label for="inputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Example@email.com">
             </div>
             <div class="mb-3">
                 <label for="inputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword1">
+                <input type="password" class="form-control" id="inputPassword1" placeholder="Password must be minimum 6 characters long">
             </div>
             <div class="mb-3">
                 <label for="inputPassword2" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="inputPassword2">
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Re-enter password above">
             </div>
             <div class="mb-3">
                 <label for="inputFirstName" class="form-label">First Name</label>
-                <input type="password" class="form-control" id="inputFirstName">
+                <input type="text" class="form-control" id="inputFirstName">
             </div>
             <div class="mb-3">
                 <label for="inputLastName" class="form-label">Last Name</label>
-                <input type="password" class="form-control" id="inputLastName">
+                <input type="text" class="form-control" id="inputLastName">
             </div>
             <button type="submit" id="btnSignUp" class="btn btn-primary">Sign Up</button>
+            <a href="index.php">Already have an account?</a>
         </form>
 
         </div>
