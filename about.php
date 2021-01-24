@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="card mx-auto" style="width: 18rem; margin-top: 5%">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="arnab.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title text-center">Arnab Sarkar</h5>
                 <p class="card-text text-center">CUNY Barauch College</p>
