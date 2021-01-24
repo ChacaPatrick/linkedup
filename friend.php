@@ -26,34 +26,25 @@ include 'nav.php';
     
 </head>
 
-
-
 <body>
-<div class="container">
   <div class="split left">
-  <p class="h1 text-center" style="color:white;"><strong> Link with Friends </strong></p>
-
   <div class="container">
-    <input id="myInput" class="form-control" type="search" placeholder="Search for your friends...">
+    <p class="h1 text-center" style="color: white; margin-bottom:10%"><strong>Link up with Friends </strong></p>
+    <input id="myInput" class="form-control" type="search" placeholder="Search..">
   </div>
-    <div class="container centered" style="margin-top: 5%">
-    
-    <div class="overflow-auto col-4 centered" style="height: 200px;">
-      <ul class="list-group" style="list-style-type:none;" id="left"></ul>
-    </div>
-    </div>
+  
+  <div class="container text-center">
+  <ul class="list-group" style="list-style-type:none;" id="left"></ul>
+  </div>
 </div>
 
- 
 
+<div class="split right" >
+<div class="container">
+  <p class="h1 text-center"><strong>Friends </strong></p>
+</div>
 
-
-<div class="split right" id="right">
-<p class="h1" ><strong>Friends </strong></p>
-  <div class ="container centered" style="margin-top:100px">
-    <div class="centered" >
-      <ul class="list-group" id="right" style="list-style-type:none;"> </ul>
-    </div>
+  <div class="container text-center" id="right">
   </div>
 </div>
  
