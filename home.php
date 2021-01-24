@@ -17,39 +17,58 @@ include 'nav.php';
 
 <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
 <script src="js/mobiscroll.javascript.min.js"></script>
-
 </head>
 
 <body>
-  <center>
-  <div id="demo-desktop-week-view"></div> 
-    <!--<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;showTitle=0&amp;mode=WEEK&amp;showTabs=0&amp;showPrint=0&amp;showNav=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      -->
-  </center>
-  <input id="datepicker" placeholder="Please Select...">
-    <script>
-     mobiscroll.eventcalendar('#demo-desktop-week-view', {
-          theme: 'ios',
-          themeVariant: 'light',
-          dragToCreate: true, 
-          dragToMove: true, 
-          dragToResize: true,
-          view: {
-              schedule: { type: 'week' }
-          },
-          onEventClick: function (event, inst) {
-              mobiscroll.toast({
-                  message: event.event.title
-              });
-          }
-      });
-    </script>
+ 
+ 
+
+  <div mbsc-page class="demo-create-read-update-delete-CRUD">
+  <div style="height:100%">
+      <div id="demo-add-delete-event"></div>
+    
+    <div id="demo-add-popup">
+        <div class="mbsc-form-group">
+            <label>
+                Title
+                <input mbsc-input id="event-title">
+            </label>
+            <label>
+                Description
+                <textarea mbsc-textarea id="event-desc"></textarea>
+            </label>
+        </div>
+        <div class="mbsc-form-group">
+            <label for="event-all-day">
+                All-day
+                <input mbsc-switch id="event-all-day" type="checkbox" />
+            </label>
+            <label for="start-input">
+                Starts
+                <input mbsc-input id="start-input" />
+            </label>
+            <label for="end-input">
+                Ends
+                <input mbsc-input id="end-input" />
+            </label>
+            <div id="event-date"></div>
+            <label>
+                Show as busy
+                <input id="event-status-busy" mbsc-segmented type="radio" name="event-status" value="busy">
+            </label>
+            <label>
+                Show as free
+                <input id="event-status-free" mbsc-segmented type="radio" name="event-status" value="free">
+            </label>
+            <div class="mbsc-button-group">
+                <button class="mbsc-button-block" id="event-delete" mbsc-button data-color="danger" data-variant="outline">Delete event</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
   
-
-
-  
-
-  <script src="scripts.js"></script>
+<script src="weeklyschedular.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
