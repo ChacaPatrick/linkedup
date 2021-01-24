@@ -15,13 +15,40 @@
 include 'nav.php'; 
 ?>
 
+<link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+<script src="js/mobiscroll.javascript.min.js"></script>
+
 </head>
 
 <body>
   <center>
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;showTitle=0&amp;mode=WEEK&amp;showTabs=0&amp;showPrint=0&amp;showNav=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <div id="demo-desktop-week-view"></div> 
+    <!--<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043&amp;showTitle=0&amp;mode=WEEK&amp;showTabs=0&amp;showPrint=0&amp;showNav=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      -->
   </center>
+  <input id="datepicker" placeholder="Please Select...">
+    <script>
+     mobiscroll.eventcalendar('#demo-desktop-week-view', {
+          theme: 'ios',
+          themeVariant: 'light',
+          dragToCreate: true, 
+          dragToMove: true, 
+          dragToResize: true,
+          view: {
+              schedule: { type: 'week' }
+          },
+          onEventClick: function (event, inst) {
+              mobiscroll.toast({
+                  message: event.event.title
+              });
+          }
+      });
+    </script>
   
+
+
+  
+
   <script src="scripts.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
