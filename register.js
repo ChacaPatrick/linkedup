@@ -5,7 +5,7 @@ const fnameInput = document.getElementById('inputFirstName');
 const lnameInput = document.getElementById('inputLastName');
 const btnSignup = document.getElementById('btnSignUp');
 
-var db = firebase.firestore();
+
 btnSignup.addEventListener('click', e =>{
     e.preventDefault();
     console.log('PEEPEEE');
@@ -13,7 +13,7 @@ btnSignup.addEventListener('click', e =>{
     const password = passInput.value;
     const check = passConfirm.value;
     if (check == password && fnameInput.value != null && lnameInput.value != null){
-
+      //firestore.collection(""); 
       firebase.auth().createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // Signed in 
