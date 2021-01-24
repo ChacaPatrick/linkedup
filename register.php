@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Linkedup</title>
+  <title>Linkedup - Register</title>
   <link rel = "icon" href = "title.png"> 
 
   <link rel="stylesheet" href="styles.css">
