@@ -20,7 +20,8 @@
 <body>
   <body style="background-color:#343a40">
   <!-- Login Form -->
-  <div class="card w-50 mx-auto h-100" >
+  <div class="container " style="margin-top: 250px;">
+  <div class="card w-50 mx-auto" >
     <h1 class="card-header text-center" style="background-color: #ff781f;">Login</h1>
     <div class="card-body align-items-center form-group col-xs-3" >
     <div class="container">
@@ -41,7 +42,7 @@
         <a href="register.php">No account? Sign up here </a>
     </form>
   </div>
-    
+  </div>
   </div>
   </div>
   
