@@ -18,8 +18,15 @@ btnSignup.addEventListener('click', e =>{
         // Signed in 
         firestore.collection('user_info').doc(userCredential.user.uid).set({
           fname: fnameInput.value,
-          lname: lnameInput.value
+          lname: lnameInput.value,
+          event_count: 1
         });
+        
+        firestore.collection("user_events").doc(userCredential.user.uid).collection("events").doc("0").set({
+          random: 100
+        })
+        //firestore.collection("user_events").doc(userCredential.user.uid).collection("event").doc("0").delete();
+
         setTimeout(function(){
           window.location.href = "home.php";
         }, 400)
