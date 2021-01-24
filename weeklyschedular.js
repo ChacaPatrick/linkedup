@@ -29,31 +29,7 @@
             user_firestore_event = firestore.collection("user_events").doc(firebase.auth().currentUser.uid).collection("events");
             user_firestore_info = firestore.collection('user_info').doc(firebase.auth().currentUser.uid);
             now = new Date(),
-            myData = [{
-                id: 132,
-                start: new Date(now.getFullYear(), now.getMonth(), 8, 13),
-                end: new Date(now.getFullYear(), now.getMonth(), 8, 13, 30),
-                title: 'Lunch @ Butcher\'s',
-                color: '#26c57d'
-            },  {
-                id: 34,
-                start: new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 18),
-                end: new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 22),
-                title: 'Dexter BD',
-                color: '#37bbe4'
-            }, {
-                id: 434,
-                start: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 10, 30),
-                end: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 11, 30),
-                title: 'Stakeholder mtg.',
-                color: '#d00f0f'
-            }, {
-                id: 655,
-                start: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7, 8, 30),
-                end: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7, 12, 30),
-                title: 'New One',
-                color: '#d00f0f'
-            }];
+            myData = [];
             console.log(user_firestore_info.get().data)
 
                 //CHANGE VALUES TO VARIABLE FOR LOOP FROM CLOUD FIRESTORE
@@ -114,7 +90,7 @@
                         keyCode: 'enter',
                         handler: function () {
                             calendar.updateEvent(tempEvent);
-                            console.log(tempEvent);
+                            /*console.log(tempEvent);
                             console.log(tempEvent["titles"]);
                             console.log("Month: " + tempEvent["start"].getMonth());
                             console.log("Day: " + tempEvent["start"].getDate());
@@ -125,7 +101,7 @@
                             console.log("Day: " + tempEvent["end"].getDate());
                             console.log("Year: " + tempEvent["end"].getFullYear());
                             console.log("Hour: " + tempEvent["end"].getHours());
-                            console.log("Minute: " + tempEvent["end"].getMinutes());
+                            console.log("Minute: " + tempEvent["end"].getMinutes());*/
                             user_firestore_info.get().then(function(doc) {
                                 console.log(doc.data()["event_count"])
                                 let i = doc.data()["event_count"]
@@ -399,6 +375,13 @@
         deleteButton.addEventListener('click', function () {
             // delete current event on button click
             calendar.removeEvent(oldEvent);
+            console.log(oldEvent["id"]);
+            user_firestore_event.doc(oldEvent["id"].toString()).delete().then(function() {
+                console.log("Document successfully deleted!");
+            }).catch(function(error) {
+                console.error("Error removing document: ", error);
+            });
+            
             popup.close();
 
             mobiscroll.toast({ 
