@@ -48,7 +48,7 @@ firebase.auth().onAuthStateChanged((user) => {
                             firestore.collection('user_friends').doc(user_main).collection("friends").doc(doc.id).get().then(function(doc2) {
                             if (doc2.exists) {
                                 console.log("Document data:", doc2.data()["lname"]);
-                                $( "#right" ).append( "<li> "+ doc2.data()["fname"] + " " +doc2.data()["lname"] + "</li> <br>" );
+                                $( "#right" ).append( "<li> "+ doc2.data()["fname"] + " " +doc2.data()["lname"] + " " + "<button type='button' onClick='button_click(this.id)' id='"+doc.id +","+user_main + "' class='btn btn-success btn-sm'>View</button> </li> <br>" );
                             
     
                             } else {
