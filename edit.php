@@ -31,6 +31,9 @@ include 'nav.php';
         <label for="formGroupExampleInput">Enter End Time</label>
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Examples is HH:MM AM(or PM)">
     </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
     </form>
   <script src="scripts.js"></script>
 
