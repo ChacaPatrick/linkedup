@@ -46,6 +46,15 @@ var calendar,
         color: '#d00f0f'
     }];
 
+//CHANGE VALUES TO VARIABLE FOR LOOP FROM CLOUD FIRESTORE
+myData.push({
+    id: 7,
+    start: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 2, 10, 30),
+    end: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 2, 11, 30),
+    title: 'Stakeholder mtg.',
+    color: '#d00f0f'
+})
+
 function createAddPopup(elm) {
     // hide delete button inside add popup
     deleteButton.style.display = 'none';
