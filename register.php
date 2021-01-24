@@ -44,7 +44,7 @@
                 <label for="inputLastName" class="form-label">Last Name</label>
                 <input type="password" class="form-control" id="inputLastName">
             </div>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" id="btnSignUp" class="btn btn-primary">Sign Up</button>
         </form>
 
         </div>
@@ -69,5 +69,8 @@
   <!-- Add Firebase products that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+  <script src="firebase.js"></script>
+  <script src="register.js"></script>
+
 </body>
 </html>
