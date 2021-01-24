@@ -48,7 +48,7 @@ firebase.auth().onAuthStateChanged((user) => {
                             firestore.collection('user_friends').doc(user_main).collection("friends").doc(doc.id).get().then(function(doc2) {
                             if (doc2.exists) {
                                 console.log("Document data:", doc2.data()["lname"]);
-                                $( "#right" ).append( "<li> "+ doc2.data()["fname"] + " " +doc2.data()["lname"] + " " + "<button type='button' onClick='button_click(this.id)' id='"+doc.id +","+user_main + "' class='btn btn-success btn-sm'>View</button> </li> <br>" );
+                                $( "#right" ).append( "<li> "+ doc2.data()["fname"] + " " +doc2.data()["lname"] + " " + "<button type='button' onClick='button_view(this.id)' id='"+doc.id +","+user_main + "' class='btn btn-success btn-sm'>View</button> </li> <br>" );
                             
     
                             } else {
@@ -98,6 +98,14 @@ firebase.auth().onAuthStateChanged((user) => {
         }).catch(function(error) {
             console.log("Error getting document:", error);
         });
-        
+    
         
     }   
+function button_view(clicked) { 
+        var splt = clicked.split(",");
+        sessionStorage.setItem("friend_id", splt[0]);
+        sessionStorage.setItem("MyId", splt[1]);
+        setTimeout(function(){
+            window.location.href = "friends_home.php";
+          }, 500)
+    }
