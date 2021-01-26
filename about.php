@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="card mx-auto" style="width: 18rem; margin-top: 5%">
-            <img class="card-img-top" src="william.jpg" alt="Card image cap">
+            <img class="card-img-top" src="william.png" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title text-center">William Lee</h5>
                 <p class="card-text text-center">CUNY City College</p>
